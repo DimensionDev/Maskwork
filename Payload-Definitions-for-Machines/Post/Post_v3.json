@@ -4,15 +4,19 @@
     "_updatedAt": "2020-01-01T00:00:00.000Z",
     "_updatedAt": "2020-01-01T00:00:00.000Z",
     "id": "0422159C7121461380A32430AFCBC7D077E7CD2BFD604DEA9DCEFD6F2B5F0CF1",
-    "postKey": "380A32430AFCBC7D077E7CD2BFD604DE",
+    "postKey": "380A32430AFCBC7D077E7CD2BFD604DE", "//": "Must be omitted when publishing",
     "postIv": "WFceyl2VOyvyeaqkTodUI1XulcXQkRVQvh3U65vvMUuRq2ln9ozlECaZYLkKq9HHWKucm9sc2e52y32I1Foikg",
     "postLocator": "urn:Maskbook:PostLocator:2:facebook.com:example.username:188046119041090",
     "epheKeys": {
-        "secp256k1": "AWFceyl2VOyvyeaqkTodUI1XulcXQkRVQ"
+        "secp256k1": "AWFceyl2VOyvyeaqkTodUI1XulcXQkRVQ",
+        "ed25519": "AWFceyl2VOyvyeaqkTodUI1XulcXQkRVQ"
     },
     "recipients": [
         "urn:Maskbook:ProfileGroupIdentifier:2:facebook.com:F0:example.user",
         "urn:Maskbook:ProfileGroupIdentifier:2:facebook.com:GR:closedgroupid"
-    ],
-    ""
+    ], "//": "Ref: ProfileGroupIdentifier (v2)",
+    "persona": "urn:Maskbook:PersonaLocator:2:secp256k1:AWFceyl2VOyvyeaqkTodUI1XulcXQkRV", "//": "Ref: PersonaLocator (v2)",
+    "profile": "urn:Maskbook:ProfileLocator:2:facebook.com:example.username", "//": "Ref: ProfileLocator (v2)",
+    "hint": "V0ZjZXlsMlZPeXZ5ZWFxaw", "//": "AES.encrypt(this.postKey, Persona.localKey).toString(Base64)",
+    "ciphertext": "D9n+q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw", "//": "AES.encrypt(cleartext, postKey).toString(Base64)",
 }

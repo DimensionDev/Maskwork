@@ -17,8 +17,12 @@ Actual Payload  | True
 
 Possible values are defined at Appendix 1 (Normalized Name) in Index page.
 
+### Actual Payload
+
+Each algorithm has its own binary representation of the public key.
+
 ## Examples
 
 ```
-urn:Maskbook:PersonaLocator:2:secp256k1:58571ECA5D953B2BF279AAA44E87542355EE95C5D0911550BE1DD4EB9BEF314B91AB6967F68CE510269960B90AABD1C758AB9C9BDB1CD9EE76CB7D88D45A2292
+urn:Maskbook:PersonaLocator:2:secp256k1:AWFceyl2VOyvyeaqkTodUI1XulcXQkRV
 ```

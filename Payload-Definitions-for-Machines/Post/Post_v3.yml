@@ -41,4 +41,7 @@ properties:
         description: Serialized ProfileLocator (v2)
     hint:
         type: string
-        description: AES.encrypt(this.postKey, PersonaAutobiography.localKey).toString(Base64)
+        description: AES.encrypt(this.postKey, Persona .localKey).toString(Base64)
+    ciphertext:
+        type: string
+        description: Ciphertext, encoded with Base64
