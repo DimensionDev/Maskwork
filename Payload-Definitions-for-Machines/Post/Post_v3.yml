@@ -1,0 +1,20 @@
+$schema: http://json-schema.org/draft-07/schema#
+description: urn:Maskbook:Post:3
+title: urn:Maskbook:Post:3
+properties:
+    _urn:
+        type: string
+        description: urn:Maskbook:Post:3:${this.id}
+        pattern: urn:Maskbook:Post:3:\w+
+    _time:
+        type: string
+        description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z)
+    id:
+        type: string
+        description: Random UUIDv4, uppercase without hyphens
+        pattern: [0-9A-F]{32}
+    postIv:
+        type: string
+        description: Post IV, 512-bit PRNG
+    postIdentifier:
+        type

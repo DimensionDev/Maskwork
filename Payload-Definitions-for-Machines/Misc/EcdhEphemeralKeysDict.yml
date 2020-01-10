@@ -1,0 +1,10 @@
+$schema: http://json-schema.org/draft-07/schema#
+description: urn:Maskbook:EcdhEphemeralKeysDict:1
+title: urn:Maskbook:EcdhEphemeralKeysDict:1
+properties:
+    secp256k1:
+        type: string
+        description: Compressed SECP256K1 public key serialized representation
+    ed25519:
+        type: string
+        description: Compressed Ed25519 public key serialized representation

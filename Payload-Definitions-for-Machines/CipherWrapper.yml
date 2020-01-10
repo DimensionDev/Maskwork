@@ -1,0 +1,24 @@
+$schema: http://json-schema.org/draft-07/schema#
+description: urn:Maskbook:CipherWrapper:1
+title: urn:Maskbook:CipherWrapper:1
+properties:
+    _spec:
+        type: string
+        description: urn:Maskbook:CipherWrapper:1
+        pattern: urn:Maskbook:CipherWrapper:1
+    _sig:
+        type: object
+        properties:
+            jwk:
+                type: string
+                description: string
+        required:
+            - jwk
+    data:
+        type: object
+        # oneOf:
+        #     - $ref: "#/definitions/asd"
+        #     - $ref: "#/definitions/asd"
+required:
+    - _spec
+    - _sig
