@@ -5,16 +5,40 @@ properties:
     _urn:
         type: string
         description: urn:Maskbook:Post:3:${this.id}
-        pattern: urn:Maskbook:Post:3:\w+
+        pattern: urn:Maskbook:Post:3:[0-9A-F]{64}
     _time:
+        type: string
+        description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z)
+    _updatedAt:
         type: string
         description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z)
     id:
         type: string
-        description: Random UUIDv4, uppercase without hyphens
-        pattern: [0-9A-F]{32}
+        description: 2 random UUIDv4 strings, uppercase without hyphens
+        pattern: [0-9A-F]{64}
+    postKey:
+        type: string
+        description: 128-bit entropy, encoded with Base64; must omit this field when publishing on social networks
     postIv:
         type: string
         description: Post IV, 512-bit PRNG
-    postIdentifier:
-        type
+    postLocator:
+        type: string
+        description: Serialized PostLocator (v2)
+    epheKeys:
+        type: object
+        description: EcdhEphemeralKeysDict (v1) object
+    recipients:
+        type: array
+        allOf:
+            type: string
+            description: Serialized ProfileGroupIdentifier (v2)
+    persona:
+        type: string
+        description: Serialized PersonaLocator (v2)
+    profile:
+        type: string
+        description: Serialized ProfileLocator (v2)
+    hint:
+        type: string
+        description: AES.encrypt(this.postKey, PersonaAutobiography.localKey).toString(Base64)
