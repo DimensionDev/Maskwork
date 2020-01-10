@@ -21,7 +21,7 @@ properties:
         description: 128-bit entropy, encoded with Base64; must omit this field when publishing on social networks
     postIv:
         type: string
-        description: Post IV, 512-bit PRNG
+        description: Post IV, 512-bit PRNG, encoded with Base64 (without trailing padding characters)
     postLocator:
         type: string
         description: Serialized PostLocator (v2)

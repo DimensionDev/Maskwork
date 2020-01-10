@@ -1,0 +1,18 @@
+{
+    "urn": "urn:Maskbook:Post:3:${this.id}",
+    "_time": "2020-01-01T00:00:00.000Z",
+    "_updatedAt": "2020-01-01T00:00:00.000Z",
+    "_updatedAt": "2020-01-01T00:00:00.000Z",
+    "id": "0422159C7121461380A32430AFCBC7D077E7CD2BFD604DEA9DCEFD6F2B5F0CF1",
+    "postKey": "380A32430AFCBC7D077E7CD2BFD604DE",
+    "postIv": "WFceyl2VOyvyeaqkTodUI1XulcXQkRVQvh3U65vvMUuRq2ln9ozlECaZYLkKq9HHWKucm9sc2e52y32I1Foikg",
+    "postLocator": "urn:Maskbook:PostLocator:2:facebook.com:example.username:188046119041090",
+    "epheKeys": {
+        "secp256k1": "AWFceyl2VOyvyeaqkTodUI1XulcXQkRVQ"
+    },
+    "recipients": [
+        "urn:Maskbook:ProfileGroupIdentifier:2:facebook.com:F0:example.user",
+        "urn:Maskbook:ProfileGroupIdentifier:2:facebook.com:GR:closedgroupid"
+    ],
+    ""
+}
