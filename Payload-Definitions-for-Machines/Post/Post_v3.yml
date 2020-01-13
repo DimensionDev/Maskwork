@@ -68,5 +68,5 @@ properties:
         description: Each key must be a PluginIdentifier (v1); must omit this field when publishing
     pluginDataSec:
         type: string
-        description: AES.encrypt(this.pluginDataSecRaw, this.postKey).toString(Base64)
+        description: AES.encrypt(BSON.encode(Obj), postKey).toString(Base64)
         binary: base64
