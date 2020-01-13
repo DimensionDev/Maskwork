@@ -4,7 +4,7 @@ title: urn:Maskbook:Post:3
 properties:
     _urn:
         type: string
-        description: urn:Maskbook:Post:3:${this.id}:${this._time}
+        description: urn:Maskbook:Post:3:${this.id}:${this._time.replace(/:/g, '')}
     _time:
         type: string
         description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z)
