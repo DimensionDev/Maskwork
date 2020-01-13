@@ -19,12 +19,14 @@ properties:
     postKey:
         type: string
         realType: blob>base64
+        bitLength: 128
         description: 128-bit entropy
         omit: true
         alias: 'a1'
     postIv:
         type: string
         realType: blob>base64
+        bitLength: 512
         description: Post IV, 512-bit PRNG (without trailing padding characters)
         alias: 'a2'
     postLocator:
@@ -54,6 +56,7 @@ properties:
     hint:
         type: string
         realType: blob>base64
+        bitLength: 128
         description: AES.encrypt(this.postKey, persona.localKey).toString(Base64)
     ciphertext:
         type: string
@@ -87,6 +90,10 @@ properties:
         omit: true
     pluginDataSec:
         type: string
-        realType: object>bson>aes>base64/dataUri/mimeHeader
-        example: data:base64/bson;D9n+q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw
+        realType:
+            - object
+            - bson
+            - aes
+            - base64
+        example: data:object/bson/aes/base64;D9n+q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw
         description: AES.encrypt(BSON.encode(Obj), postKey).toString(Base64)
