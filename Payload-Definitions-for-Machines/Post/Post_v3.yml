@@ -18,30 +18,55 @@ properties:
         pattern: [0-9A-F]{64}
     postKey:
         type: string
-        description: 128-bit entropy, encoded with Base64; must omit this field when publishing on social networks
+        description: 128-bit entropy, encoded with Base64; must omit this field when publishing
+        alias: 'a1'
     postIv:
         type: string
         description: Post IV, 512-bit PRNG, encoded with Base64 (without trailing padding characters)
+        alias: 'a2'
     postLocator:
         type: string
         description: Serialized PostLocator (v2)
+        alias: 'a3'
     epheKeys:
         type: object
         description: EcdhEphemeralKeysDict (v1) object
+        alias: 'a4'
     recipients:
         type: array
+        alias: 'a5'
         allOf:
             type: string
             description: Serialized ProfileGroupIdentifier (v2)
     persona:
         type: string
+        alias: 'a6'
         description: Serialized PersonaLocator (v2)
     profile:
         type: string
         description: Serialized ProfileLocator (v2)
     hint:
         type: string
-        description: AES.encrypt(this.postKey, Persona .localKey).toString(Base64)
+        description: AES.encrypt(this.postKey, persona.localKey).toString(Base64)
     ciphertext:
         type: string
         description: Ciphertext, encoded with Base64
+    opportunistKeys:
+        type: object
+        description: X
+        properties:
+            bits:
+                type: number
+                description: How many last bits of respective public keys are used to divide recipient-specific ECDH payloads into groups
+                alias: 'a1'
+            0:
+    pluginDataPub:
+        type: object
+        description: Each key must be a PluginIdentifier (v1)
+    pluginDataSecRaw:
+        type: object
+        description: Each key must be a PluginIdentifier (v1); must omit this field when publishing
+    pluginDataSec:
+        type: string
+        description: AES.encrypt(this.pluginDataSecRaw, this.postKey).toString(Base64)
+        binary: base64
