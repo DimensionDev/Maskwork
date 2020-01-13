@@ -18,7 +18,7 @@
     "profile": "urn:Maskbook:ProfileLocator:2:facebook.com:example.username",
     "hint": "U2FsdGVkX19U+bIBoEHDE+BeDYnCxbiJABKEnPEWzs8",
     "cleartext": "Hello World!",
-    "ciphertext": "D9n+q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw",
+    "ciphertext": "U2FsdGVkX1/ISvYPSG+Zy4FILlm6C7IDMEH3ZiqiZkM=",
     "opportunistKeys": {
         "bits": 2,
         "data": [
