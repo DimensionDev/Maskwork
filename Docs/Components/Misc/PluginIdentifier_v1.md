@@ -14,5 +14,5 @@ Package Version     | Integer or semantic version number
 ## Examples
 
 ```
-urn:Maskbook:Plugin:1:com.maskbook.redpacket:1
+urn:Maskbook:Plugin:1:com.maskbook.redpacket:1.0.0
 ```
