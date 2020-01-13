@@ -61,9 +61,13 @@ properties:
                 alias: 'a1'
             data:
                 type: array
-                description:
+                description: Groups
+                alias: 'a2'
                 allOf:
-                    type:
+                    type: array
+                    allOf:
+                        type: string
+                        description: Recipeint-specific ECDH ciphertext of this.postKey
                 length: Math.pow(2, this.opportunistKeys.bits)
     pluginDataPub:
         type: object
