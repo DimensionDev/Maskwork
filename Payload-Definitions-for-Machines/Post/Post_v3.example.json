@@ -20,7 +20,7 @@
     "cleartext": "Hello World!", "//": "Must be omitted when publishing",
     "ciphertext": "D9n+q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw", "//": "AES.encrypt(cleartext, postKey).toString(Base64)",
     "opportunistKeys": {
-        "_": 3,
+        "bits": 3,
         "2": [
             "U2FsdGVkX19U+bIBoEHDE+BeDYnCxbiJABKEnPEWzs8",
             "U2FsdGVkX19jI4wCbSZ7Uaz/LAO6mS05Ofxm+/3nB6s="
