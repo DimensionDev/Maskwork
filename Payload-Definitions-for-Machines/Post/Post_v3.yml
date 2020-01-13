@@ -18,18 +18,23 @@ properties:
         pattern: [0-9A-F]{64}
     postKey:
         type: string
-        description: 128-bit entropy, encoded with Base64; must omit this field when publishing
+        realType: blob>base64
+        description: 128-bit entropy
+        omit: true
         alias: 'a1'
     postIv:
         type: string
-        description: Post IV, 512-bit PRNG, encoded with Base64 (without trailing padding characters)
+        realType: blob>base64
+        description: Post IV, 512-bit PRNG (without trailing padding characters)
         alias: 'a2'
     postLocator:
         type: string
+        class: PostLocator:2
         description: Serialized PostLocator (v2)
         alias: 'a3'
     epheKeys:
         type: object
+        class: EcdhEphemeralKeysDict:1
         description: EcdhEphemeralKeysDict (v1) object
         alias: 'a4'
     recipients:
@@ -37,6 +42,7 @@ properties:
         alias: 'a5'
         allOf:
             type: string
+            class: ProfileGroupIdentifier:2
             description: Serialized ProfileGroupIdentifier (v2)
     persona:
         type: string
@@ -47,9 +53,11 @@ properties:
         description: Serialized ProfileLocator (v2)
     hint:
         type: string
+        realType: blob>base64
         description: AES.encrypt(this.postKey, persona.localKey).toString(Base64)
     ciphertext:
         type: string
+        realType: blob>base64
         description: Ciphertext, encoded with Base64
     opportunistKeys:
         type: object
@@ -67,15 +75,18 @@ properties:
                     type: array
                     allOf:
                         type: string
-                        description: Recipeint-specific ECDH ciphertext of this.postKey
+                        realType: blob>base64
+                        description: Recipeint-specific ECDH payload of this.postKey
                 length: Math.pow(2, this.opportunistKeys.bits)
     pluginDataPub:
         type: object
         description: Each key must be a PluginIdentifier (v1)
     pluginDataSecRaw:
         type: object
-        description: Each key must be a PluginIdentifier (v1); must omit this field when publishing
+        description: Each key must be a PluginIdentifier (v1)
+        omit: true
     pluginDataSec:
         type: string
+        realType: object>bson>aes>base64/dataUri/mimeHeader
+        example: data:base64/bson;D9n+q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw
         description: AES.encrypt(BSON.encode(Obj), postKey).toString(Base64)
-        binary: base64

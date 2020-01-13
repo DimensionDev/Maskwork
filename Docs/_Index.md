@@ -68,3 +68,29 @@ Index   | Normalized Name | Common Name
 ------- | --------------- | -------------
 0       | secp256k1       | SECP256K1
 1       | ed25519         | Ed25519
+
+## Appendix 2: Extra Fields in JSON Schema
+
+### alias
+
+The alternative name of this field.
+
+Example: `a1`.
+
+### class
+
+Which class does this field belong to. The content should be a URN component.
+
+Example: `ProfileLocator:2`.
+
+### realType
+
+A chain of how the original type is represented in the final encoding format. Each part is a function which accepts some payload and returns another payload. The chain will finally create a payload encoded into the form as indicated by `type`.
+
+Example: `object>bson>aes>base64`.
+
+### omit
+
+Whether should this field be omitted when publishing.
+
+Example: `true`.
