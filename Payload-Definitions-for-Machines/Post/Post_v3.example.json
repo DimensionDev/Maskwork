@@ -8,7 +8,7 @@
     "postLocator": "urn:Maskbook:PostLocator:2:facebook.com:example.username:188046119041090",
     "epheKeys": {
         "secp256k1": "AWFceyl2VOyvyeaqkTodUI1XulcXQkRVQ",
-        "ed25519":   "A6VmM1tSW1LqNqNMz0FS8xWMMLmaZjVmOdb8"
+        "ed25519": "A6VmM1tSW1LqNqNMz0FS8xWMMLmaZjVm8"
     },
     "recipients": [
         "urn:Maskbook:ProfileGroupIdentifier:2:facebook.com:F0:example.user",
