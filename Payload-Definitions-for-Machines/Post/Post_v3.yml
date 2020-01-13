@@ -59,7 +59,12 @@ properties:
                 type: number
                 description: How many last bits of respective public keys are used to divide recipient-specific ECDH payloads into groups
                 alias: 'a1'
-            0:
+            data:
+                type: array
+                description:
+                allOf:
+                    type:
+                length: Math.pow(2, this.opportunistKeys.bits)
     pluginDataPub:
         type: object
         description: Each key must be a PluginIdentifier (v1)
