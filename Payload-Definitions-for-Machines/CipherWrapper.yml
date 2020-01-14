@@ -16,7 +16,8 @@ properties:
         required:
             - jwk
     _software:
-        $ref: urn:Maskbook:SoftwareIndicator:1
+        type: object
+        class: SoftwareIndicator:1
     data:
         type: object
         description: Data section

@@ -32,7 +32,7 @@ properties:
         type: string
         realType:
             - blob
-            - base64
+            - base64url
         bitLength: 128
         description: 128-bit entropy
         omit: true
@@ -41,7 +41,7 @@ properties:
         type: string
         realType:
             - blob
-            - base64
+            - base64url
         bitLength: 512
         description: Post IV, 512-bit PRNG (without trailing padding characters)
     postLocator:
@@ -76,9 +76,9 @@ properties:
         type: string
         realType:
             - blob
-            - base64
+            - base64url
         bitLength: 128
-        description: AES.encrypt(this.postKey, this.persona.localKey).toString(Base64)
+        description: AES.encrypt(this.postKey, this.persona.localKey).toString(Base64url)
     cleartext:
         type: string
         description: Original clear text
@@ -88,7 +88,7 @@ properties:
         type: string
         realType:
             - blob
-            - base64
+            - base64url
         description: Append
     opportunistKeys:
         alias: j
@@ -109,7 +109,7 @@ properties:
                         type: string
                         realType:
                             - blob
-                            - base64
+                            - base64url
                         description: Recipeint-specific ECDH payload of this.postKey
                 length: Math.pow(2, this.opportunistKeys.bits)
     pluginDataPub:
@@ -127,6 +127,6 @@ properties:
             - object
             - bson
             - aes
-            - base64
+            - base64url
         example: D9n+q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw
-        description: AES.encrypt(BSON.encode(this.pluginDataSecRaw), this.postKey).toString(Base64)
+        description: AES.encrypt(BSON.encode(this.pluginDataSecRaw), this.postKey).toString(Base64url)

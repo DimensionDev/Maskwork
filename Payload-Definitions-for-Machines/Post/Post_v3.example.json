@@ -4,7 +4,7 @@
     "_updatedAt": "2020-01-01T00:00:00.000Z",
     "uuid": "0422159C7121461380A32430AFCBC7D0",
     "postKey": "zNbUuo0FSx6VmOdb8xmalA==",
-    "postIv": "zlzGZqbUuo0FSx6VmOdo6jQVLHp/MZxb8pTM1tSW1LqNMz0FSx6WY51vOdb8xmaZjnWVmmBUzNmalselNbUuUA==",
+    "postIv": "zlzGZqbUuo0FSx6VmOdo6jQVLHp_MZxb8pTM1tSW1LqNMz0FSx6WY51vOdb8xmaZjnWVmmBUzNmalselNbUuUA==",
     "postLocator": "urn:Maskbook:PostLocator:2:facebook.com:example.username:188046119041090",
     "epheKeys": {
         "secp256k1": "AWFceyl2VOyvyeaqkTodUI1XulcXQkRVQ",
@@ -16,24 +16,24 @@
     ],
     "persona": "urn:Maskbook:PersonaLocator:2:secp256k1:AWFceyl2VOyvyeaqkTodUI1XulcXQkRV",
     "profile": "urn:Maskbook:ProfileLocator:2:facebook.com:example.username",
-    "hint": "U2FsdGVkX19U+bIBoEHDE+BeDYnCxbiJABKEnPEWzs8",
+    "hint": "U2FsdGVkX19U-bIBoEHDE-BeDYnCxbiJABKEnPEWzs8",
     "cleartext": "Hello World!",
-    "ciphertext": "U2FsdGVkX1/ISvYPSG+Zy4FILlm6C7IDMEH3ZiqiZkM=",
+    "ciphertext": "U2FsdGVkX1_ISvYPSG-Zy4FILlm6C7IDMEH3ZiqiZkM=",
     "opportunistKeys": {
         "bits": 2,
         "data": [
             [
-                "U2FsdGVkX19U+bIBoEHDE+BeDYnCxbiJABKEnPEWzs8",
-                "U2FsdGVkX19jI4wCbSZ7Uaz/LAO6mS05Ofxm+/3nB6s"
+                "U2FsdGVkX19U-bIBoEHDE-BeDYnCxbiJABKEnPEWzs8",
+                "U2FsdGVkX19jI4wCbSZ7Uaz_LAO6mS05Ofxm-_3nB6s"
             ],
             [
             ],
             [
-                "U2FsdGVkX19U+bIBoEHDE+BeDYnCxbiJABKEnPEWzs8",
-                "U2FsdGVkX19jI4wCbSZ7Uaz/LAO6mS05Ofxm+/3nB6s"
+                "U2FsdGVkX19U-bIBoEHDE-BeDYnCxbiJABKEnPEWzs8",
+                "U2FsdGVkX19jI4wCbSZ7Uaz_LAO6mS05Ofxm-_3nB6s"
             ],
             [
-                "U2FsdGVkX19U+bIBoEHDE+BeDYnCxbiJABKEnPEWzs8",
+                "U2FsdGVkX19U-bIBoEHDE-BeDYnCxbiJABKEnPEWzs8",
             ]
         ]
     },
@@ -47,5 +47,5 @@
             "...": "..."
         }
     },
-    "pluginDataSec": "D9n+q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw"
+    "pluginDataSec": "D9n-q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw"
 }

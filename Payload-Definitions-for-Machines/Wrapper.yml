@@ -16,6 +16,7 @@ properties:
         required:
             - jwk
     _software:
+        type: object
         class: SoftwareIndicator:1
     data:
         type: object
