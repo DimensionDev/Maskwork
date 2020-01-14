@@ -5,18 +5,19 @@ properties:
     _spec:
         type: string
         description: urn:Maskbook:Wrapper:1
-        pattern: urn:Maskbook:Wrapper:1
+        value: urn:Maskbook:Wrapper:1
+    _sig:
+        type: object
+        description: Signature section
+        properties:
+            jwk:
+                type: string
+                description: JsonWebKey signature
+    _software:
+        class: SoftwareIndicator:1
     data:
         type: object
-        properties:
-            cipher:
-                type: string
-                description: Cipher after encryption
-            ecdhEphKeys:
-                type: object
-                # ref: EcdhEphemeralKeysDict
-            sessionKeysBlob:
-                type: array
+        description: Data section
 required:
     - _spec
     - _sig

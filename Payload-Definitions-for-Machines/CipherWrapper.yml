@@ -8,17 +8,19 @@ properties:
         pattern: urn:Maskbook:CipherWrapper:1
     _sig:
         type: object
+        description: Signature section
         properties:
             jwk:
                 type: string
-                description: string
+                description: JsonWebKey signature
         required:
             - jwk
+    _software:
+        $ref: urn:Maskbook:SoftwareIndicator:1
     data:
         type: object
-        # oneOf:
-        #     - $ref: "#/definitions/asd"
-        #     - $ref: "#/definitions/asd"
+        description: Data section
 required:
     - _spec
     - _sig
+    - _software
