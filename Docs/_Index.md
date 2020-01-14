@@ -105,3 +105,7 @@ Example: `[ 'object', 'bson', 'aes', 'base64' ]`.
 Whether should this field be omitted when publishing.
 
 Example: `true`.
+
+### value
+
+The only acceptable value of this field
