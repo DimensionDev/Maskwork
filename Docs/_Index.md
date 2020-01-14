@@ -59,8 +59,15 @@ Payloads:
 
 ## Miscellaneous Minor Details
 
-- ProfileIdentifier Serialization
-- UserGroupIdentifier Serialization
+- EcdhEphemeralKeysDict
+- PersonaLocator
+- PluginIdentifier
+- ProfileGroupIdentifier
+- ProfileLocator
+- SoftwareIndicator
+- UserGroupIdentifier
+
+## Understanding the Mechanisms
 
 ## Appendix 1: Normalized Algorithm Names
 
