@@ -72,7 +72,7 @@ Payloads:
 ## Appendix 1: Normalized Algorithm Names
 
 Index   | Normalized Name | Common Name
-------- | --------------- | -------------
+------- | --------------- | -----------
 0       | secp256k1       | SECP256K1
 1       | ed25519         | Ed25519
 
