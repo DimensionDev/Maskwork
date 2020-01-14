@@ -108,4 +108,4 @@ Example: `true`.
 
 ### value
 
-The only acceptable value of this field
+The only acceptable value of this field.
