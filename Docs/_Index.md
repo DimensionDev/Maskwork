@@ -4,7 +4,7 @@
 
 Maskbook is a utility software for mitigating surveillance from social network corporations.
 
-Maskwork is the protocol for Maskbook applications.
+Maskwork is the protocol for Maskbook applications. The protocol is a collection of selected payloads, which may be classified into several components. Similarly, HTTP has 2 famous payloads, namely, Request and Response; HTTP includes components like MIME Type and Cookie.
 
 ## Convention
 

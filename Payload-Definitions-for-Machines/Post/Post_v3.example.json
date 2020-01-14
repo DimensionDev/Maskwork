@@ -2,7 +2,7 @@
     "urn": "urn:Maskbook:Post:3:0422159C7121461380A32430AFCBC7D0:2020-01-01T000000.000Z",
     "_time": "2020-01-01T00:00:00.000Z",
     "_updatedAt": "2020-01-01T00:00:00.000Z",
-    "id": "0422159C7121461380A32430AFCBC7D0",
+    "uuid": "0422159C7121461380A32430AFCBC7D0",
     "postKey": "zNbUuo0FSx6VmOdb8xmalA==",
     "postIv": "zlzGZqbUuo0FSx6VmOdo6jQVLHp/MZxb8pTM1tSW1LqNMz0FSx6WY51vOdb8xmaZjnWVmmBUzNmalselNbUuUA==",
     "postLocator": "urn:Maskbook:PostLocator:2:facebook.com:example.username:188046119041090",

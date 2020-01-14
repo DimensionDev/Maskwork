@@ -4,92 +4,116 @@ title: urn:Maskbook:Post:3
 properties:
     _urn:
         type: string
-        description: urn:Maskbook:Post:3:${this.id}:${this._time.replace(/:/g, '')}
+        description: urn:Maskbook:Post:3:${this.uuid}:${this._time.replace(/:/g, '')}
+        example: urn:Maskbook:Post:3:0422159C7121461380A32430AFCBC7D0:1970-01-01T000000.000Z
     _time:
         type: string
+        realType:
+            - date
+            - toISOString
         description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z)
     _updatedAt:
         type: string
+        realType:
+            - date
+            - toISOString
         description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z)
-    id:
+    uuid:
         type: string
-        realType: blob>hex
+        realType:
+            - blob
+            - hex
+            - uppercase
         bitLength: 128
         description: Random UUIDv4 string, uppercase without hyphens
         pattern: [0-9A-F]{32}
     postKey:
-        alias: 'a1'
+        alias: a
         type: string
-        realType: blob>base64
+        realType:
+            - blob
+            - base64
         bitLength: 128
         description: 128-bit entropy
         omit: true
     postIv:
-        alias: 'a2'
+        alias: b
         type: string
-        realType: blob>base64
+        realType:
+            - blob
+            - base64
         bitLength: 512
         description: Post IV, 512-bit PRNG (without trailing padding characters)
     postLocator:
-        alias: 'a3'
+        alias: c
         type: string
         class: PostLocator:2
         description: Serialized PostLocator (v2)
     epheKeys:
-        alias: 'a4'
+        alias: d
         type: object
         class: EcdhEphemeralKeysDict:1
         description: EcdhEphemeralKeysDict (v1) object
     recipients:
-        alias: 'a5'
+        alias: e
         type: array
         allOf:
             type: string
             class: ProfileGroupIdentifier:2
             description: Serialized ProfileGroupIdentifier (v2)
     persona:
-        alias: 'a6'
+        alias: f
         type: string
         class: PersonaLocator:2
         description: Serialized PersonaLocator (v2)
     profile:
-        alias: 'a7'
+        alias: g
         type: string
         class: ProfileLocator:2
         description: Serialized ProfileLocator (v2)
     hint:
-        alias: 'a8'
+        alias: h
         type: string
-        realType: blob>base64
+        realType:
+            - blob
+            - base64
         bitLength: 128
         description: AES.encrypt(this.postKey, this.persona.localKey).toString(Base64)
-    ciphertext:
-        alias: 'a9'
+    cleartext:
         type: string
-        realType: blob>base64
-        description: Ciphertext encoded
+        description: Original clear text
+        omit: true
+    ciphertext:
+        alias: i
+        type: string
+        realType:
+            - blob
+            - base64
+        description: Append
     opportunistKeys:
-        alias: 'a10'
+        alias: j
         type: object
-        description: X
+        description: List of lists of ECDH payloads
         properties:
             bits:
                 type: number
                 description: How many last bits of respective public keys are used to divide recipient-specific ECDH payloads into groups
-                alias: 'a1'
+                alias: a
             data:
                 type: array
                 description: Groups
-                alias: 'a2'
+                alias: b
                 allOf:
                     type: array
                     allOf:
                         type: string
-                        realType: blob>base64
+                        realType:
+                            - blob
+                            - base64
                         description: Recipeint-specific ECDH payload of this.postKey
                 length: Math.pow(2, this.opportunistKeys.bits)
     pluginDataPub:
-        alias: 'a11'
+        alias: k
         type: object
         description: Each key must be a PluginIdentifier (v1)
     pluginDataSecRaw:
@@ -97,7 +121,7 @@ properties:
         description: Each key must be a PluginIdentifier (v1)
         omit: true
     pluginDataSec:
-        alias: 'a12'
+        alias: l
         type: string
         realType:
             - object
