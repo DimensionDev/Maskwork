@@ -99,7 +99,7 @@ Example: `ProfileLocator:2`.
 
 A chain of how the original type is represented in the final encoding format. Each part is a function which accepts some payload and returns another payload. The chain will finally create a payload encoded into the form as indicated by `type`.
 
-Example: `[ 'object', 'bson', 'aes', 'base64' ]`.
+Example: `[ 'object', 'bson', 'aes', 'base64url' ]`.
 
 ### omit
 
