@@ -5,7 +5,7 @@ properties:
     _spec:
         type: string
         description: urn:Maskbook:CipherWrapper:1
-        pattern: urn:Maskbook:CipherWrapper:1
+        value: urn:Maskbook:CipherWrapper:1
     _sig:
         type: object
         description: Signature section

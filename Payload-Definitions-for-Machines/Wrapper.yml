@@ -13,6 +13,8 @@ properties:
             jwk:
                 type: string
                 description: JsonWebKey signature
+        required:
+            - jwk
     _software:
         class: SoftwareIndicator:1
     data:
