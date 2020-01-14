@@ -8,7 +8,6 @@ This document classifies all known issues.
 
 ### To Be Categorized
 
-- Payload instance ID to be designed.
 - Database backup mechanism to be designed.
 - Database restoration might require complex migration?
 - Resolving conflicts during merge operations (for example, updating persona autobiography and importing database backup files)?
@@ -22,5 +21,9 @@ This document classifies all known issues.
 ### Will Not Fix
 
 - ...
+
+### Solution in Discussion
+
+- Payload instance ID to be designed. (#1)
 
 ### Already Fixed
