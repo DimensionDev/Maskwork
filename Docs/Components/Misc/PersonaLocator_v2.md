@@ -24,5 +24,5 @@ Each algorithm has its own binary representation of the public key.
 ## Examples
 
 ```
-urn:Maskbook:PersonaLocator:2:secp256k1:AWFceyl2VOyvyeaqkTodUI1XulcXQkRV
+urn:Maskbook:PersonaLocator:2:secp256k1:fepurTAWwFegSKnk28vE5VFGSwrSsV7P4W9oEHttZEby3
 ```

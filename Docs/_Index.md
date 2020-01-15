@@ -15,6 +15,7 @@ Maskwork is the protocol for Maskbook applications. The protocol is a collection
 - Identifiers should generally abide to Uniform Resource Name (ITEF RFC 2141).
     - In actual practice, the format should generally be "urn:Maskbook:${PayloadType}:${Version}:${InternalIdentifier}".
 - Only Base64url (RFC 4648) is used in this specification; generic Base64 is not allowed.
+- The term "Base58" in this specification specifically refers to the variation adopted by Bitcoin.
 
 ## Terminologies
 
@@ -99,7 +100,7 @@ Example: `ProfileLocator:2`.
 
 A chain of how the original type is represented in the final encoding format. Each part is a function which accepts some payload and returns another payload. The chain will finally create a payload encoded into the form as indicated by `type`.
 
-Example: `[ 'object', 'bson', 'aes', 'base64url' ]`.
+Example: `[ 'object', 'json.stringify', 'gzip.compress', 'aes.encrypt', 'base64url.encode' ]`.
 
 ### omit
 

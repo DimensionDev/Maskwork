@@ -4,28 +4,27 @@ title: urn:Maskbook:Post:3
 properties:
     _urn:
         type: string
-        description: urn:Maskbook:Post:3:${this.uuid}:${this._time.replace(/:/g, '')}
+        description: urn:Maskbook:Post:3:${this.uuid}:${this._time.replace(/:/g, '')}.
         example: urn:Maskbook:Post:3:0422159C7121461380A32430AFCBC7D0:1970-01-01T000000.000Z
     _time:
         type: string
         realType:
             - date
             - toISOString
-        description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z)
+        description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z).
     _updatedAt:
         type: string
         realType:
             - date
             - toISOString
-        description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z)
+        description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z).
     uuid:
         type: string
         realType:
             - blob
             - hex
-            - uppercase
         bitLength: 128
-        description: Random UUIDv4 string, uppercase without hyphens
+        description: Random UUIDv4 string, uppercase without hyphens.
         pattern: [0-9A-F]{32}
     postKey:
         alias: a
@@ -34,7 +33,7 @@ properties:
             - blob
             - base64url
         bitLength: 128
-        description: 128-bit entropy
+        description: 128-bit entropy.
         omit: true
     postIv:
         alias: b
@@ -43,7 +42,7 @@ properties:
             - blob
             - base64url
         bitLength: 512
-        description: Post IV, 512-bit PRNG (without trailing padding characters)
+        description: Post IV, 512-bit PRNG (without trailing padding characters).
     postLocator:
         alias: c
         type: string
@@ -89,7 +88,7 @@ properties:
         realType:
             - blob
             - base64url
-        description: Append
+        description: Ciphertext after encryption
     opportunistKeys:
         alias: j
         type: object
@@ -125,8 +124,9 @@ properties:
         type: string
         realType:
             - object
-            - bson
-            - aes
-            - base64url
+            - json.stringify
+            - gzip.compress
+            - aes.encrypt
+            - base64url.encode
         example: D9n+q20EIPEKGG0KOfNf5MaOBgT4tAuG0rFNhZ2285Crl58LdvsPWMML7kPk58EPAbU7eujSnFvLotP7HRqcgAT0E3nwbq614ezW7TpaoQFnrhuVsOYAm5aXzvcnARc2YE5F5lYlKH826W32gqXIT4Ftotaktpq3qtXpf1H2D6Pw
-        description: AES.encrypt(BSON.encode(this.pluginDataSecRaw), this.postKey).toString(Base64url)
+        description: AES.encrypt(GZIP.compress(JSON.stringify(this.pluginDataSecRaw)), this.postKey).toString(Base64url)
