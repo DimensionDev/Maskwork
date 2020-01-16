@@ -1,4 +1,4 @@
-# Component: PostLocator (v2)
+# Format: PostLocator (v2)
 
 ## Introduction
 

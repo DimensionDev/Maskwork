@@ -1,4 +1,4 @@
-# Component: EcdhEphemeralKeysDict (v1)
+# Format: EcdhEphemeralKeysDict (v1)
 
 ## Introduction
 

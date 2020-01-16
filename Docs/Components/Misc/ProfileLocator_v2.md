@@ -1,4 +1,4 @@
-# Component: ProfileLocator (v2)
+# Format: ProfileLocator (v2)
 
 ## Introduction
 

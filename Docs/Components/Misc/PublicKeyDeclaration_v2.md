@@ -4,6 +4,8 @@
 
 PublicKeyDeclaration is designed to represent the public key of a Persona. It is a binary payload in Base58 format.
 
+All Maskwork-supporting softwares must not demand any additional data to identify a public key.
+
 ## Data Fields
 
 Field Name          | Description

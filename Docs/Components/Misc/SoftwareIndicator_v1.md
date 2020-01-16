@@ -1,4 +1,4 @@
-# Component: SoftwareIndicator (v1)
+# Format: SoftwareIndicator (v1)
 
 ## Introduction
 

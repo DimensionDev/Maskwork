@@ -1,4 +1,4 @@
-# Component: Post (v3)
+# Format: Post (v3)
 
 ## Introduction
 

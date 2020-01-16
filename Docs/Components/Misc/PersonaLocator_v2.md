@@ -1,4 +1,4 @@
-# Component: PersonaLocator (v2)
+# Format: PersonaLocator (v2)
 
 ## Introduction
 
@@ -9,7 +9,7 @@ PersonaLocator is a binary blob, to uniquely identify a Persona.
 Field Name      | Required
 --------------- | --------
 Algorithm       | True
-Actual Payload  | True
+Real Key        | True
 
 ## Data Values
 
@@ -17,9 +17,11 @@ Actual Payload  | True
 
 Possible values are defined at Appendix 1 (Normalized Name) in Index page.
 
-### Actual Payload
+### Real Key
 
 Each algorithm has its own binary representation of the public key.
+
+This field has the Base58 representation of the binary blob.
 
 ## Examples
 

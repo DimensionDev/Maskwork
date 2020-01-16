@@ -1,4 +1,4 @@
-# Component: PluginIdentifier (v2)
+# Format: PluginIdentifier (v2)
 
 ## Introduction
 

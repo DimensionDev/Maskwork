@@ -80,6 +80,10 @@ Index   | Normalized Name | Common Name
 
 ## Appendix 2: Extra Fields in JSON Schema
 
+### acceptableValues
+
+List of acceptable values of a data field.
+
 ### alias
 
 The alternative name of this field.
@@ -111,3 +115,30 @@ Example: `true`.
 ### value
 
 The only acceptable value of this field.
+
+## Appendix 3: Using Data Field Alias Names
+
+### Overview
+
+The alias names have 2 categories, namely, global and local.
+
+Global alias names should be uppercase Base26 digits starting from "A". Generally, a global alias name should be allocated only if the data field has multiple occurrences across payloads.
+
+Local alias names should be lowercase Base26 digits starting from "a".
+
+### Global Alias Names Registration Table
+
+Alias Name  | Full Field Name       | First Used By
+----------- | --------------------- | -------------
+`a`         | postKey               | Post:3
+`b`         | postIv                | Post:3
+`c`         | postLocator           | Post:3
+`d`         | epheKeys              | Post:3
+`e`         | recipients            | Post:3
+`f`         | persona               | Post:3
+`g`         | profile               | Post:3
+`h`         | hint                  | Post:3
+`i`         | ciphertext            | Post:3
+`j`         | opportunistKeys       | Post:3
+`k`         | pluginDataPub         | Post:3
+`l`         | pluginDataSec         | Post:3

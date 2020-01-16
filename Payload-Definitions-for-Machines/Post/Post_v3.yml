@@ -18,6 +18,12 @@ properties:
             - date
             - toISOString
         description: ISO 8601 with UTC string (1970-01-01T00:00:00.000Z).
+    _variant:
+        type: string
+        description: The variant of the payload
+        acceptableValues:
+            - min
+            - max
     uuid:
         type: string
         realType:

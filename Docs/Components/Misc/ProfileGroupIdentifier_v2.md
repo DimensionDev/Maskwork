@@ -1,4 +1,4 @@
-# Component: ProfileGroupIdentifier (v2)
+# Format: ProfileGroupIdentifier (v2)
 
 ## Introduction
 
