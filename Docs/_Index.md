@@ -130,15 +130,4 @@ Local alias names should be lowercase Base26 digits starting from "a".
 
 Alias Name  | Full Field Name       | First Used By
 ----------- | --------------------- | -------------
-`a`         | postKey               | Post:3
-`b`         | postIv                | Post:3
-`c`         | postLocator           | Post:3
-`d`         | epheKeys              | Post:3
-`e`         | recipients            | Post:3
-`f`         | persona               | Post:3
-`g`         | profile               | Post:3
-`h`         | hint                  | Post:3
-`i`         | ciphertext            | Post:3
-`j`         | opportunistKeys       | Post:3
-`k`         | pluginDataPub         | Post:3
-`l`         | pluginDataSec         | Post:3
+`A`         | ...                   | ...
