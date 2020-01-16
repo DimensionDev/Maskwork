@@ -124,7 +124,10 @@ properties:
     pluginDataSecRaw:
         type: object
         description: Each key must be a PluginIdentifier (v1)
-        omit: true
+        omit: this._variant==='min'
+        omitIf:
+            this._variant:
+                - min
     pluginDataSec:
         alias: l
         type: string
