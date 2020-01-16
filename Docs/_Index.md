@@ -67,7 +67,7 @@ Payloads:
 - ProfileGroupIdentifier
 - ProfileLocator
 - SoftwareIndicator
-- UserGroupIdentifier
+- UserGroupIdentifier (Deprecated)
 
 ## Understanding the Mechanisms
 
@@ -109,10 +109,6 @@ Example: `[ 'object', 'json.stringify', 'gzip.compress', 'aes.encrypt', 'base64u
 Whether should this field be omitted when publishing.
 
 Example: `true`.
-
-### value
-
-The only acceptable value of this field.
 
 ## Appendix 3: Using Data Field Alias Names
 
