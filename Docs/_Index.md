@@ -80,9 +80,7 @@ Index   | Normalized Name | Common Name
 
 ## Appendix 2: Extra Fields in JSON Schema
 
-### acceptableValues
-
-List of acceptable values of a data field.
+These extra fields are used for notation purposes. If the purpose of a field may be replaced by a predefined field in JSON Schema, it should be replaced on an asynchronous basis.
 
 ### alias
 
