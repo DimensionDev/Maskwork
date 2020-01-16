@@ -104,11 +104,11 @@ A chain of how the original type is represented in the final encoding format. Ea
 
 Example: `[ 'object', 'json.stringify', 'gzip.compress', 'aes.encrypt', 'base64url.encode' ]`.
 
-### omit
+### omitIfAny
 
-Whether should this field be omitted when publishing.
+This data field should be omitted, if any of the following conditions is true.
 
-Example: `true`.
+Example: `{ "this._variant": [ "min" ] }`. If the value of `this._variant` can be found within array `[ "min" ]`, this data field will be omitted.
 
 ## Appendix 3: Using Data Field Alias Names
 
