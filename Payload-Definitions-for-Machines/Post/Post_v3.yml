@@ -121,9 +121,13 @@ properties:
         alias: k
         type: object
         description: Each key must be a PluginIdentifier (v1)
+        propertyNames:
+            pattern: urn:Maskbook:Plugin:1:[^\.]([\w\d\.]+)[^\.]:(\d+|\d+\.\d+\.\d+)
     pluginDataSecRaw:
         type: object
         description: Each key must be a PluginIdentifier (v1)
+        propertyNames:
+            pattern: urn:Maskbook:Plugin:1:[^\.]([\w\d\.]+)[^\.]:(\d+|\d+\.\d+\.\d+)
         omitIfAny:
             this._variant:
                 - min
