@@ -9,10 +9,6 @@ Status: Draft
 
 ProfileGroupIdentifier is designed to provide a universal interface for locating a post on a social network. A ProfileGroupIdentifier string may be used to calculate the URL of the permanent link of the profile group on its social network.
 
-## Conventions
-
-- Safe intra-site unique name is defined as the Hex encoding of the UTF-8 binary representation of the intra-site unique name string.
-
 ## Data Fields
 
 Field Name      | Required
