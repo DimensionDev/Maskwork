@@ -1,3 +1,8 @@
+---
+Status: Draft
+
+---
+
 # Format: ProfileGroupIdentifier (v2)
 
 ## Introduction

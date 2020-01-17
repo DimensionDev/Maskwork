@@ -1,3 +1,8 @@
+---
+Status: Draft
+
+---
+
 # Format: PluginIdentifier (v2)
 
 ## Introduction

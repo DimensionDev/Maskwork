@@ -1,3 +1,8 @@
+---
+Status: Draft
+
+---
+
 # Format: ProfileLocator (v2)
 
 ## Introduction

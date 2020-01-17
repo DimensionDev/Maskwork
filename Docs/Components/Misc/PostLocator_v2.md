@@ -1,3 +1,8 @@
+---
+Status: Draft
+
+---
+
 # Format: PostLocator (v2)
 
 ## Introduction

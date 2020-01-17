@@ -1,3 +1,8 @@
+---
+Status: Draft
+
+---
+
 # Component: PublicKeyDeclaration (v2)
 
 ## Introduction

@@ -1,8 +1,13 @@
+---
+Status: Draft
+
+---
+
 # Format: SoftwareIndicator (v1)
 
 ## Introduction
 
-## Examples
+## JSON Schema
 
 ```yaml
 $this:
