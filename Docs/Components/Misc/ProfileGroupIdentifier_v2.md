@@ -1,5 +1,5 @@
 ---
-Status: Draft
+Status: WIP
 
 ---
 
@@ -51,7 +51,7 @@ For Type    | Secondary ID Definition
 ## Examples
 
 ```
-urn:Maskbook:ProfileGroupIdentifier:2:facebook.com:F0:example.user
-urn:Maskbook:ProfileGroupIdentifier:2:facebook.com:GR:closedgroupid
-urn:Maskbook:ProfileGroupIdentifier:2:facebook.com:FS:user01*user02*user03
+urn:Maskbook:ProfileGroupIdentifier:2:example.com:F0:example.user
+urn:Maskbook:ProfileGroupIdentifier:2:example.com:GR:closedgroupid
+urn:Maskbook:ProfileGroupIdentifier:2:example.com:FS:user01*user02*user03
 ```

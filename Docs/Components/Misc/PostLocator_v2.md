@@ -1,5 +1,5 @@
 ---
-Status: Draft
+Status: WIP
 
 ---
 
@@ -12,5 +12,5 @@ PostLocator is designed to provide a universal interface for locating a post on 
 ## Examples
 
 ```
-urn:Maskbook:PostLocator:2:facebook.com:example.username:188046119041090
+urn:Maskbook:PostLocator:2:example.com:example.username:188046119041090
 ```
