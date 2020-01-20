@@ -14,11 +14,12 @@ Maskwork is the protocol for Maskbook applications. The protocol is a collection
 - Only ISO 8601 time is used. Other time representation formats are avoided.
 - Identifiers should generally abide to Uniform Resource Name (ITEF RFC 2141).
     - In actual practice, the format should generally be "urn:Maskbook:${PayloadType}:${Version}:${InternalIdentifier}".
+    - Any URN string must be a valid UTF-7 string.
 - Only Base64url (RFC 4648) is used in this specification; generic Base64 is not allowed.
 - The term "Base58" in this specification specifically refers to the variation adopted by Bitcoin.
 - Unless otherwise noted, Hex encoding always uses uppercase characters.
 - Safe Intra-site Unique Name (SISUN) is defined as the Hex encoding of the UTF-8 binary representation of the intra-site unique name string.
-- When a non-alphanumerical domain name is needed, the encoded format, which starts with "xn--", is used.
+- When a non-ASCII domain name is needed, use Punycode (RFC 3492) encoding.
 
 ## Terminologies
 
