@@ -4,8 +4,8 @@ title: urn:Maskbook:Post:4
 properties:
     _urn:
         type: string
-        description: urn:Maskbook:Post:4:${this.uuid}:${this._time.replace(/:/g, '')}.
-        example: urn:Maskbook:Post:4:0422159C7121461380A32430AFCBC7D0:1970-01-01T000000.000Z
+        description: urn:Maskbook:Post:4:${this.uuid}.
+        example: urn:Maskbook:Post:4:0422159C7121461380A32430AFCBC7D0
     _time:
         type: string
         realType:
