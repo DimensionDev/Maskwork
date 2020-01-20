@@ -14,7 +14,7 @@ Maskwork is the protocol for Maskbook applications. The protocol is a collection
 - Only ISO 8601 time is used. Other time representation formats are avoided.
 - Identifiers should generally abide to Uniform Resource Name (ITEF RFC 2141).
     - In actual practice, the format should generally be "urn:Maskbook:${PayloadType}:${Version}:${InternalIdentifier}".
-    - Any URN string must be a valid UTF-7 string.
+    - Any URN string must be a valid UTF-7 string. However, when encoding any part, the not-to-encode list should include only alphanumerical characters, slash, and dot.
 - Only Base64url (RFC 4648) is used in this specification; generic Base64 is not allowed.
 - The term "Base58" in this specification specifically refers to the variation adopted by Bitcoin.
 - Unless otherwise noted, Hex encoding always uses uppercase characters.

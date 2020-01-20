@@ -3,7 +3,7 @@ Status: Effective
 
 ---
 
-# Format: ProfileLocator (v2)
+# Format: ProfileLocator (v1)
 
 ## Introduction
 
