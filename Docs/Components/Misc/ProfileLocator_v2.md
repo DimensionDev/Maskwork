@@ -19,5 +19,9 @@ Intra-Site Unique Name  | True
 ## Examples
 
 ```
-urn:Maskbook:ProfileLocator:2:example.com:6578616D706C652E757365726E616D65
+urn:Maskbook:ProfileLocator:2:example.com:username
+```
+
+```
+urn:Maskbook:ProfileLocator:2:example.com:username
 ```
