@@ -1,11 +1,11 @@
 $schema: http://json-schema.org/draft-07/schema#
-description: urn:Maskbook:CipherWrapper:1
-title: urn:Maskbook:CipherWrapper:1
+description: urn:Maskbook:Wrapper:5
+title: urn:Maskbook:Wrapper:5
 properties:
     _spec:
         type: string
         enum:
-            - urn:Maskbook:CipherWrapper:1
+            - urn:Maskbook:Wrapper:5
     _sig:
         type: object
         description: Signature section
@@ -15,7 +15,7 @@ properties:
                 description: JsonWebKey signature
         required:
             - jwk
-    _software:
+    __software:
         type: object
         class: SoftwareIndicator:1
     data:

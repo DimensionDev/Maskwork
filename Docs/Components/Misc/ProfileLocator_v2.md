@@ -23,5 +23,6 @@ urn:Maskbook:ProfileLocator:2:example.com:username
 ```
 
 ```
-urn:Maskbook:ProfileLocator:2:example.com:username
+urn:Maskbook:ProfileLocator:2:weibo.com:+Z2VTu05LlfQ-
+urn:Maskbook:ProfileLocator:2:weibo.com:来去之间
 ```
