@@ -6,21 +6,30 @@ Maskbook is a utility software for mitigating surveillance from social network c
 
 Maskwork is the protocol for Maskbook applications. The protocol is a collection of selected payloads, which may be classified into several components. Similarly, HTTP has 2 famous payloads, namely, Request and Response; HTTP includes components like MIME Type and Cookie.
 
-## Convention
+## Maintenance
+
+Maskwork is maintained by Maskwork Special Interest Group (MWSIG). MWSIG has its standard workflows.
+
+## Conventions
+
+### Documentation Conventions
 
 - All wording in these documents abide to IETF RFC 2119.
+
+### Technical Conventions
+
 - Primarily, this specification defines several data structures and the rules around their processing. It is transportation-agnostic in that the concepts can be used within the same process, in many various message passing environments. It uses JSON (RFC 4627) as data format.
-    - All JSON-based payloads should generally follow Wrapper_v1, unless otherwise noted.
+- All JSON-based payloads should generally follow Wrapper_v1, unless otherwise noted.
 - Only ISO 8601 time is used. Other time representation formats are avoided.
 - Identifiers should generally abide to Uniform Resource Name (ITEF RFC 2141).
-    - In actual practice, the format should generally be "urn:Maskbook:${PayloadType}:${Version}:${InternalIdentifier}".
-    - Any URN string must be a valid UTF-7 string. However, when encoding any part, the not-to-encode list should include only alphanumerical characters, slash, and dot.
+- In actual practice, the format should generally be "urn:Maskbook:${PayloadType}:${Version}:${InternalIdentifier}".
+- Any URN string must be a valid UTF-7 string. However, when encoding any part, the not-to-encode list should include only alphanumerical characters, slash, and dot.
 - Only Base64url (RFC 4648) is used in this specification; generic Base64 is not allowed.
 - The term "Base58" in this specification specifically refers to the variation adopted by Bitcoin.
 - Unless otherwise noted, Hex encoding always uses uppercase characters.
-- When a non-ASCII domain name is needed, use Punycode (RFC 3492) encoding.
+- When a non-ASCII domain name is needed, use Punycode (IETF RFC 3492) encoding.
 
-## Terminologies
+##Terminologies
 
 - **URN Classifier**: The class part of a URN, like "urn:Maskbook:Post:3".
 
